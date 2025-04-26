@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,16 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom ESPFIRE colors
+				espfire: {
+					'orange': '#F97316',
+					'dark-blue': '#1A1F2C',
+					'navy': '#172042',
+					'red': '#ea384c',
+					'green': '#22c55e',
+					'undetected-red': '#ea384c',
+					'detected-green': '#22c55e',
 				}
 			},
 			borderRadius: {
@@ -84,11 +95,22 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'flame': {
+					'0%, 100%': {
+						transform: 'scale(1.0)',
+						opacity: '1'
+					},
+					'50%': {
+						transform: 'scale(1.1)',
+						opacity: '0.8'
+					},
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'flame-pulse': 'flame 3s ease-in-out infinite',
 			}
 		}
 	},
